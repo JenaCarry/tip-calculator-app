@@ -5,7 +5,7 @@
   <h2>Tip calculator app</h2>
 
   <h3>
-    <a href="">
+    <a href="https://www.frontendmentor.io/solutions/tip-calculator-app-2Xk7-cBA4d">
       <strong>Frontend Mentor</strong>
     </a>
   </h3>
@@ -34,7 +34,7 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
 
 <h2>Links</h2>
 
-- Solution URL: [Tip calculator app | Frontend Mentor]()
+- Solution URL: [Tip calculator app | Frontend Mentor](https://www.frontendmentor.io/solutions/tip-calculator-app-2Xk7-cBA4d)
 - Live Site URL: [https://jenacarry.github.io/tip-calculator-app/](https://jenacarry.github.io/tip-calculator-app/)
 
 <br>
