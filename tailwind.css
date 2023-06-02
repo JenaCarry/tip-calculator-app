@@ -11,7 +11,7 @@
 
     .inputStyle {
         @apply bg-veryLightGrayishCyan w-full h-10 px-3 text-2xl text-right text-veryDarkCyan outline-none rounded-md focus:ring focus:ring-strongCyan 
-        hover:ring hover:ring-strongCyan/40 cursor-pointer
+        hover:ring hover:ring-strongCyan/40 cursor-pointer transition-all duration-150 ease-in-out
     }
 
     .icon {
@@ -19,7 +19,7 @@
     }
 
     .tipsBtn {
-        @apply bg-veryDarkCyan text-white text-2xl w-full h-10 rounded-md grid place-content-center hover:bg-[#A7F2E4] hover:text-veryDarkCyan cursor-pointer
+        @apply bg-veryDarkCyan text-white text-2xl w-full h-10 rounded-md grid place-content-center hover:bg-[#A7F2E4] hover:text-veryDarkCyan cursor-pointer transition-all duration-200 ease-in-out
     }
 
     .tipsBtn.activeBtn {
