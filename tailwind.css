@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .inputTitle {
+        @apply text-sm text-darkGrayishCyan block mb-1.5
+    }
+
+    .inputStyle {
+        @apply bg-veryLightGrayishCyan w-full h-10 px-3 text-2xl text-right text-veryDarkCyan outline-none rounded-md focus:ring focus:ring-strongCyan 
+        hover:ring hover:ring-strongCyan/40 cursor-pointer
+    }
+
+    .icon {
+        @apply absolute top-1/2 -translate-y-1/2 left-3
+    }
+
+    .tipsBtn {
+        @apply bg-veryDarkCyan text-white text-2xl w-full h-10 rounded-md grid place-content-center hover:bg-[#A7F2E4] hover:text-veryDarkCyan cursor-pointer
+    }
+
+    .tipsBtn.activeBtn {
+        @apply bg-strongCyan text-veryDarkCyan
+    }
+
+    .invalid #entryValue {
+        @apply ring ring-red-400/90
+    }
+
+    .invalid #numberOfPeople {
+        @apply ring ring-red-400/90
+    }
+
+    .invalid .message {
+        @apply block absolute right-0 -bottom-6 min-[375px]:-top-[1.625rem]
+    }
+
+    .reset {
+        @apply w-full h-10 bg-strongCyan/20 rounded-md text-veryDarkCyan uppercase cursor-not-allowed hover:bg-none shadow-md transition-all duration-200 ease-in-out
+    }
+
+    .reset.enable {
+        @apply cursor-pointer hover:bg-[#A7F2E4] bg-strongCyan
+    }
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+    appearance: none;
+    margin: 0;
+}

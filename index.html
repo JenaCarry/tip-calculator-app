@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body
+  class="min-h-screen grid place-content-center grid-rows-[7.5rem_1fr] font-spaceMono bg-lightGrayishCyan md:grid-rows-[7.5rem_max-content]">
+  <header class="grid place-content-center">
+    <div>
+      <img src="assets/images/logo.svg" alt="logo" width="87" height="54">
+    </div>
+  </header>
+
+  <main
+    class="w-full max-w-2xl bg-white rounded-t-3xl px-6 py-7 grid gap-7 md:grid-cols-2 md:max-w-4xl md:rounded-3xl md:p-8">
+    <h1 class="sr-only">Tip calculator app</h1>
+
+    <section class="space-y-6 px-1.5">
+
+      <div>
+        <div>
+          <label class="inputTitle" for="entryValue">
+            Bill
+          </label>
+        </div>
+        <div class="relative">
+          <img class="icon" src="assets/images/icon-dollar.svg" alt="Dollar Icon" width="11" height="17">
+          <input class="inputStyle" type="number" name="entryValue" id="entryValue" placeholder="0">
+          <p class="text-red-400/90 text-sm hidden message"></p>
+        </div>
+      </div>
+
+      <div>
+        <h2 class="inputTitle">Select Tip %</h2>
+        <ul class="grid grid-cols-2 gap-2.5 md:grid-cols-3">
+          <li id="5" class="tipsBtn">5%</li>
+          <li id="10" class="tipsBtn">10%</li>
+          <li id="15" class="tipsBtn">15%</li>
+          <li id="25" class="tipsBtn">25%</li>
+          <li id="50" class="tipsBtn">50%</li>
+          <li>
+            <input class="inputStyle placeholder:text-darkGrayishCyan md:text-xl" type="number" name="customTip"
+              id="customTip" placeholder="Custom">
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <div>
+          <label class="inputTitle" for="numberOfPeople">
+            Number of People
+          </label>
+        </div>
+        <div class="relative">
+          <img class="icon" src="assets/images/icon-person.svg" alt="Person Icon" width="13" height="16">
+          <input class="inputStyle" type="number" name="numberOfPeople" id="numberOfPeople" placeholder="0">
+          <p class="text-red-400/90 text-sm hidden message"></p>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="bg-veryDarkCyan rounded-md p-5 flex flex-col gap-6 sm:p-6 md:justify-between md:py-9">
+      <div class="space-y-6">
+        <div class="flex justify-between">
+          <div>
+            <h2 class="text-veryLightGrayishCyan text-sm">Tip Amount</h2>
+            <p class="text-grayishCyan text-xs">/ person</p>
+          </div>
+          <p id="tipAmount" class="text-3xl text-strongCyan">$0.00</p>
+        </div>
+        <div class="flex justify-between">
+          <div>
+            <h2 class="text-veryLightGrayishCyan text-sm">Total</h2>
+            <p class="text-grayishCyan text-xs">/ person</p>
+          </div>
+          <p id="total" class="text-3xl text-strongCyan">$0.00</p>
+        </div>
+      </div>
+      <div>
+        <button class="reset">Reset</button>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="assets/js/index.js"></script>
+</body>
+
+</html>
